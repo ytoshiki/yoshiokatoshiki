@@ -1,0 +1,47 @@
+@media (max-width: 1190px) {
+  .about-wrapper {
+    width: 90% !important;
+  }
+
+}
+
+@media (max-width: 924px) {
+  .about-wrapper {
+    justify-content: center;
+    width: 50% !important;
+  }
+
+  .about-left {
+    display: none !important;
+  }
+}
+
+@media (max-width: 670px) {
+  .portfolio-wrapper {
+    width: 90% !important;
+  }
+
+  .header {
+    .my-name, .my-msg {
+      font-size: 35px !important;
+    }
+  }
+}
+
+@media (max-width: 752px) {
+  .header {
+    button {
+      margin: 5px 0 !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+  }
+
+  .project {
+    min-height: 180px !important;
+  }
+}

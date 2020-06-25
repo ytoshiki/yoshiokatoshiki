@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@media (max-width: 1190px) {
+  .about-wrapper {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 924px) {
+  .about-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50% !important;
+  }
+  .about-left {
+    display: none !important;
+  }
+}
+
+@media (max-width: 670px) {
+  .portfolio-wrapper {
+    width: 90% !important;
+  }
+  .header .my-name, .header .my-msg {
+    font-size: 35px !important;
+  }
+}
+
+@media (max-width: 752px) {
+  .header button {
+    margin: 5px 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill] !important;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+  }
+  .project {
+    min-height: 180px !important;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f8ff;
+}
+
+.about-me {
+  height: auto;
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.about-wrapper {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-wrapper .about-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-wrapper .about-left img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  max-height: 550px;
+}
+
+.about-wrapper .about-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Noto Sans JP";
+}
+
+.about-wrapper .about-right h1 {
+  margin-bottom: 30px;
+}
+
+.portfolio {
+  height: auto;
+  padding: 50px 0;
+  font-family: "Noto Sans JP";
+  background: #f8f6f6;
+}
+
+.portfolio .portfolio-wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.portfolio .portfolio-wrapper .portfolio_p {
+  text-align: center;
+}
+
+.portfolio .portfolio-wrapper h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.portfolio .portfolio-wrapper .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolio-wrapper .categories button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  margin-right: 15px;
+  font-family: "Noto Sans JP";
+}
+
+.portfolio .portfolio-wrapper .categories button::after {
+  content: "";
+  width: 0;
+  display: block;
+  height: 2px;
+  background-color: #cfc9c6;
+  background-image: linear-gradient(62deg, #d6d3d0 0%, #9e9a90 100%);
+  margin-top: 2px;
+  -webkit-transition: ease width 0.3s;
+  transition: ease width 0.3s;
+}
+
+.portfolio .portfolio-wrapper .categories button:hover::after {
+  width: 100%;
+  -webkit-transition: ease width 0.3s;
+  transition: ease width 0.3s;
+}
+
+.portfolio .portfolio-wrapper .categories button:focus {
+  outline: none;
+}
+
+.portfolio .portfolio-wrapper .projects {
+  display: -ms-grid;
+  display: grid;
+  height: inherit;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.portfolio .portfolio-wrapper .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 260px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio .portfolio-wrapper .project:hover .overlay {
+  -webkit-transition: ease height 0.3s;
+  transition: ease height 0.3s;
+  height: 100%;
+}
+
+.portfolio .portfolio-wrapper .p-1 {
+  background: url("../images/p1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .portfolio-wrapper .p-2 {
+  background: url("../images/p2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .portfolio-wrapper .p-3 {
+  background: url("../images/p3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .portfolio-wrapper .p-4 {
+  background: url("../images/p4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .portfolio-wrapper .p-5 {
+  background: url("../images/p5.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .portfolio-wrapper .overlay {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: #ffffff;
+  color: #7c7878;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: ease height 0.3s;
+  transition: ease height 0.3s;
+}
+
+.portfolio .portfolio-wrapper .overlay .overlay-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.portfolio .portfolio-wrapper .overlay .overlay-right .overlay-right_demo {
+  margin-right: 15px;
+}
+
+.portfolio .portfolio-wrapper .overlay .overlay-left {
+  padding: 15px;
+}
+
+.portfolio .portfolio-wrapper .overlay .tech_header {
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.portfolio .portfolio-wrapper .overlay span {
+  display: block;
+}
+
+.portfolio .portfolio-wrapper .overlay .project-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.portfolio .portfolio-wrapper .overlay .tech {
+  color: #838281;
+  opacity: 0.8;
+}
+
+.portfolio .portfolio-wrapper .overlay .visit {
+  display: inline-block;
+  color: #3c3e5c;
+  position: relative;
+}
+
+.portfolio .portfolio-wrapper .overlay a {
+  text-decoration: none;
+  color: #0404a7;
+}
+/*# sourceMappingURL=style.css.map */

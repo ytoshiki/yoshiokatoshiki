@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="about-me" id="about">
+      <div class="about-wrapper">
+        <div class="about-left"></div>
+        <div class="about-right">
+          <div class="about-right-wrapper">
+            <p>
+              初めまして。吉岡寿輝（よしおか　としき）、1998年愛知県名古屋市生まれ。小学４年次に英語に惹かれ、高校、大学と英語科を選考し、二度の留学を経験。<br />
+              そして2019年秋、（WEB系）プログラミングの独学を開始。<br />
+              コツコツ努力をすることや、考えることが好きな性格、これまで培ってきた英語を生かし、技術の向上に努めている。<br />
+            </p>
+            <br />
+
+            <hr />
+            <span>テクノロジー：</span>
+            <br />
+            <span>HTML | CSS SASS | JavaScript | React | Redux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-wrapper">
+        <h1>ポートフォリオ</h1>
+        <p class="portfolio_p">
+          (2019年11月から2020年6月までの学習の成果物)
+        </p>
+        <div class="categories">
+          <button class="active" data-target="all">新しい順</button>
+          <button data-target="react">React</button>
+          <button data-target="javascript">JavaScript</button>
+        </div>
+        <div class="projects">
+          <div class="project p-5" data-id="react">
+            <div class="overlay">
+              <div class="overlay-left">
+                <span class="project-name">HYDE.</span>
+                <span>‐ユーザ認証（firebase）</span>
+                <span>‐カート機能（redux）</span>
+                <span>‐クレジットカード機能（script）</span>
+                <span class="tech_header">テクノロジー</span>
+                <span class="tech">HTML/SASS/JavaScript/React/Redux/Firebase</span>
+              </div>
+
+              <div class="overlay-right">
+                <div class="overlay-right_demo">
+                  <img src="./assets/broken-link.png" width="32px" />
+                  <span class="visit"><a href="https://hyde-live.herokuapp.com/" target="_blank">サイトを見る</a></span>
+                </div>
+                <div>
+                  <img src="./assets/GitHub-Mark-32px.png" alt="" />
+                  <span class="visit"><a href="https://github.com/ytoshiki/react-hyde" target="_blank">コードを見る</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project p-4" data-id="javascript">
+            <div class="overlay">
+              <div class="overlay-left">
+                <span class="project-name">カート機能 </span>
+                <span class="tech">HTML/SASS/JavaScript</span>
+              </div>
+
+              <div class="overlay-right">
+                <span class="visit"><a target="_blank" href="https://ytoshiki.github.io/ecommerce-project/">Website</a></span>
+                <span class="visit"><a target="_blank" href="https://github.com/ytoshiki/ecommerce-project">Github</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="project p-2" data-id="javascript">
+            <div class="overlay">
+              <div class="overlay-left">
+                <span class="project-name">フィルター機能 </span>
+                <span class="tech">HTML/SASS/JavaScript/Gulp</span>
+              </div>
+
+              <div class="overlay-right">
+                <span class="visit"><a target="_blank" href="https://ytoshiki.github.io/gulp-project/">Webiste</a></span>
+                <span class="visit"><a target="_blank" href="https://github.com/ytoshiki/gulp-project">Github</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="project p-3" data-id="javascript">
+            <div class="overlay">
+              <div class="overlay-left">
+                <span class="project-name">条件検索機能 </span>
+                <span class="tech">HTML/SASS/JavaScript</span>
+              </div>
+
+              <div class="overlay-right">
+                <span class="visit"><a target="_blank" href="https://ytoshiki.github.io/realestate-p3/">Website</a></span>
+                <span class="visit"><a target="_blank" href="https://github.com/ytoshiki/realestate-p3">Github</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project p-1" data-id="javascript">
+            <div class="overlay">
+              <div class="overlay-left">
+                <span class="project-name">ELIXR</span>
+                <span>‐日本語・英語に切り替えが可能</span>
+                <span class="tech_header">テクノロジー</span>
+                <span class="tech">HTML/SASS/JavaScript</span>
+              </div>
+
+              <div class="overlay-right">
+                <div class="overlay-right_demo">
+                  <img src="./assets/broken-link.png" width="32px" />
+                  <span class="visit"><a href="https://ytoshiki.github.io/cafe-project/" target="_blank">サイトを見る</a></span>
+                </div>
+                <div>
+                  <img src="./assets/GitHub-Mark-32px.png" alt="" />
+                  <span class="visit"><a href="https://github.com/ytoshiki/cafe-project" target="_blank">コードを見る</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

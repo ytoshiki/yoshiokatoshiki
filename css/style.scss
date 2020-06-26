@@ -23,8 +23,18 @@ a {
 
 .about-me {
   height: auto;
-  background: #ffffff;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.342), #ffffff52), url("../images/sky.jpg");
   padding: 30px 0;
+  background-attachment: fixed;
+}
+
+.my-image {
+  background: url("../assets/img1.png");
+  width: 220px;
+  background-position: center;
+  background-size: cover;
+  height: 220px;
+  border-radius: 50%;
 }
 
 .about-wrapper {
@@ -38,6 +48,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    span {
+      font-size: 1.2rem;
+      padding: 10px 0 0 0;
+    }
     img {
       display: block;
       width: 100%;
@@ -60,7 +76,7 @@ a {
   height: auto;
   padding: 50px 0;
   font-family: "Noto Sans JP";
-  background: rgb(248, 246, 246);
+  background: rgb(255, 255, 255);
 
   .portfolio-wrapper {
     width: 70%;
@@ -68,10 +84,10 @@ a {
 
     .portfolio_p {
       text-align: center;
+      margin-bottom: 15px;
     }
 
     h1 {
-      margin-bottom: 40px;
       text-align: center;
       font-size: 30px;
     }
@@ -116,6 +132,7 @@ a {
       display: grid;
       height: inherit;
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
       gap: 10px;
     }
 
